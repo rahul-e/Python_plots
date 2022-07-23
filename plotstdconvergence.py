@@ -13,7 +13,7 @@ Normfacm1eo35=1.20270E-02
 #plt.rcParams["figure.figsize"] = (10,3)
 
 #**************************** M1EO8 ********************************
-df = pd.read_csv('./M1EO8fixALPHA.txt',
+df = pd.read_csv('./Lineplot/M1EO8fixALPHA.txt',
                  header=None,
                  sep='\s+', error_bad_lines=False)
 
@@ -24,7 +24,7 @@ m1eo8ALmean=df['Mean'].values/Normfacm1eo8
 m1eo8ALstd=df['STD'].values/Normfacm1eo8
 
 
-df = pd.read_csv('./M1EO8fixBETA.txt',
+df = pd.read_csv('./Lineplot/M1EO8fixBETA.txt',
                  header=None,
                  sep='\s+', error_bad_lines=False)
 
@@ -34,7 +34,7 @@ df.head()
 m1eo8BEmean=df['Mean'].values/Normfacm1eo8
 m1eo8BEstd=df['STD'].values/Normfacm1eo8
 
-df = pd.read_csv('./M1EO8fixZETA.txt',
+df = pd.read_csv('./Lineplot/M1EO8fixZETA.txt',
                  header=None,
                  sep='\s+', error_bad_lines=False)
 
@@ -47,7 +47,7 @@ m1eo8ZEstd=df['STD'].values/Normfacm1eo8
 
 #********************** M2EO8 *********************************
 
-df = pd.read_csv('./M2EO8fixALPHA.txt',
+df = pd.read_csv('./Lineplot/M2EO8fixALPHA.txt',
                  header=None,
                  sep='\s+', error_bad_lines=False)
 
@@ -59,7 +59,7 @@ m2eo8ALstd=df['STD'].values/Normfacm2eo8
 
 
 
-df = pd.read_csv('./M2EO8fixBETA.txt',
+df = pd.read_csv('./Lineplot/M2EO8fixBETA.txt',
                  header=None,
                  sep='\s+', error_bad_lines=False)
 
@@ -69,7 +69,7 @@ df.head()
 m2eo8BEmean=df['Mean'].values/Normfacm2eo8
 m2eo8BEstd=df['STD'].values/Normfacm2eo8
 
-df = pd.read_csv('./M2EO8fixZETA.txt',
+df = pd.read_csv('./Lineplot/M2EO8fixZETA.txt',
                  header=None,
                  sep='\s+', error_bad_lines=False)
 
@@ -82,7 +82,7 @@ m2eo8ZEstd=df['STD'].values/Normfacm2eo8
 
 #********************** M1EO35 *********************************
 
-df = pd.read_csv('./M1EO35fixALPHA.txt',
+df = pd.read_csv('./Lineplot/M1EO35fixALPHA.txt',
                  header=None,
                  sep='\s+', error_bad_lines=False)
 
@@ -94,7 +94,7 @@ m1eo35ALstd=df['STD'].values/Normfacm1eo35
 
 
 
-df = pd.read_csv('./M1EO35fixBETA.txt',
+df = pd.read_csv('./Lineplot/M1EO35fixBETA.txt',
                  header=None,
                  sep='\s+', error_bad_lines=False)
 
@@ -104,7 +104,7 @@ df.head()
 m1eo35BEmean=df['Mean'].values/Normfacm1eo35
 m1eo35BEstd=df['STD'].values/Normfacm1eo35
 
-df = pd.read_csv('./M1EO35fixZETA.txt',
+df = pd.read_csv('./Lineplot/M1EO35fixZETA.txt',
                  header=None,
                  sep='\s+', error_bad_lines=False)
 
@@ -127,7 +127,7 @@ plt.xlabel('Number of Monte Carlo evaluations',fontsize=16)
 plt.ylabel('Normalised standard deviation',fontsize=16)
 plt.legend((p1,p2,p3),(r'$\beta=\beta_0, \zeta=\zeta_0$',r'$\alpha=\alpha_0, \zeta=\zeta_0$',r'$\alpha=\alpha_0, \beta=\beta_0$'))
 plt.tick_params(axis='both', which='major', labelsize=12)
-plt.legend(loc=2, prop={'size': 6})
+#plt.legend(loc=2, prop={'size': 6})
 plt.tight_layout()
 plt.savefig('STDm1eo8.png', dpi=300)
 plt.show()
@@ -146,7 +146,7 @@ plt.xlabel('Number of Monte Carlo evaluations',fontsize=16)
 plt.ylabel('Normalised standard deviation',fontsize=16)
 plt.legend((p1,p2,p3),(r'$\beta=\beta_0, \zeta=\zeta_0$',r'$\alpha=\alpha_0, \zeta=\zeta_0$',r'$\alpha=\alpha_0, \beta=\beta_0$'))
 plt.tick_params(axis='both', which='major', labelsize=12)
-plt.legend(loc=2, prop={'size': 6})
+#plt.legend(loc=2, prop={'size': 6})
 plt.tight_layout()
 plt.savefig('STDm2eo8.png', dpi=300)
 plt.show()
@@ -164,7 +164,7 @@ plt.xlabel('Number of Monte Carlo evaluations',fontsize=16)
 plt.ylabel('Normalised standard deviation',fontsize=16)
 plt.legend((p1,p2,p3),(r'$\beta=\beta_0, \zeta=\zeta_0$',r'$\alpha=\alpha_0, \zeta=\zeta_0$',r'$\alpha=\alpha_0, \beta=\beta_0$'))
 plt.tick_params(axis='both', which='major', labelsize=12)
-plt.legend(loc=2, prop={'size': 6})
+#plt.legend(loc=2, prop={'size': 6})
 plt.tight_layout()
 plt.savefig('STDm1eo35.png', dpi=300)
 plt.show()

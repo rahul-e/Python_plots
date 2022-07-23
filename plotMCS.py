@@ -56,7 +56,7 @@ ax1.set_xlabel(r'Number of Monte Carlo evaluations',fontsize=16)
 ax1.set_ylabel('Mean of normalised contact pressure',color='k', fontsize=16)
 ax2.set_ylabel('STD of normalised contact pressure',color='k', fontsize=16)
 
-ax1.legend(('MCS mean','RF mean'),loc='center')
+ax1.legend(('MCS mean','RF mean'),loc='best')
 ax2.legend(('MCS standard deviation','RF standard deviation'),loc='best')
 plt.tight_layout()
 plt.savefig('MCSmaxpress.png', dpi=300)

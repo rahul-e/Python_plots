@@ -8,7 +8,7 @@ from matplotlib import figure
 
 plt.rcParams["figure.figsize"] = (10,3)
 
-df = pd.read_csv('./axialfirst.txt',
+df = pd.read_csv('./barplots/axialfirst.txt',
                  header=None,
                  sep='\s+', error_bad_lines=False)
 
@@ -20,7 +20,7 @@ FaxBE=df['BE'].values
 FaxZE=df['ZE'].values
 
 
-df = pd.read_csv('./Tangfirst.txt',
+df = pd.read_csv('./barplots/Tangfirst.txt',
                  header=None,
                  sep='\s+', error_bad_lines=False)
 
@@ -31,7 +31,7 @@ FtanAL=df['AL'].values
 FtanBE=df['BE'].values
 FtanZE=df['ZE'].values
 
-df = pd.read_csv('./radialfirst.txt',
+df = pd.read_csv('./barplots/radialfirst.txt',
                  header=None,
                  sep='\s+', error_bad_lines=False)
 
@@ -42,7 +42,7 @@ FradAL=df['AL'].values
 FradBE=df['BE'].values
 FradZE=df['ZE'].values
 
-df = pd.read_csv('./axialtotal.txt',
+df = pd.read_csv('./barplots/axialtotal.txt',
                  header=None,
                  sep='\s+', error_bad_lines=False)
 
@@ -54,7 +54,7 @@ TaxBE=df['BE'].values
 TaxZE=df['ZE'].values
 
 
-df = pd.read_csv('./Tangtotal.txt',
+df = pd.read_csv('./barplots/Tangtotal.txt',
                  header=None,
                  sep='\s+', error_bad_lines=False)
 
@@ -66,7 +66,7 @@ TtanBE=df['BE'].values
 TtanZE=df['ZE'].values
 
 
-df = pd.read_csv('./radialtotal.txt',
+df = pd.read_csv('./barplots/radialtotal.txt',
                  header=None,
                  sep='\s+', error_bad_lines=False)
 
