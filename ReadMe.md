@@ -15,3 +15,5 @@
 ## 6. Use [plotstdconvergence.py](./plotstdconvergence.py) to create the plot below ![Line plot](./Lineplot/STDm1eo8.png)
 
 ## 7. Use [plotAniformFibreStress.py](./PlotAniformFibreStress.py) to create the three dimensional scatter plot below ![3D-ScatterPlot](3Dscatterplot/FibreStress2_Ply7.png)
+
+## 8. Use [TwoDimScatter3Ddata.py](./TwoDimScatter3Ddata.py) to create a scatter plot of 3D data like the one shown below ![ScatterPlot](2DScatterof3Ddata/2DScatterof3Ddata.png)
